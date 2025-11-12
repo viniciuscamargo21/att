@@ -1,0 +1,272 @@
+/*
+ * 1. Configurações Globais (Reset Básico)
+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Fundo levemente cinza */
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaço extra abaixo das imagens */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+ * 2. Cabeçalho (Header)
+ */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.profile-icons img {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.profile-icons img:hover {
+    opacity: 0.8;
+}
+
+
+/*
+ * 3. Navegação (Nav)
+ */
+.main-nav {
+    background-color: #000;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main-nav a {
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #333;
+}
+
+/*
+ * 4. Banner Principal (Hero)
+ */
+.hero-banner {
+    margin-bottom: 40px;
+    background-color: #e0e0e0;
+}
+
+.banner-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Garante que a imagem se ajuste */
+}
+
+.banner-image {
+    flex: 1; /* Ocupa metade do espaço */
+}
+
+.banner-text {
+    flex: 1; /* Ocupa a outra metade */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    font-style: italic;
+    color: #000;
+}
+
+.banner-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/*
+ * 5. Seções de Conteúdo (Categorias)
+ */
+.category-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os cartões */
+    gap: 20px;
+    flex-wrap: wrap; /* Permite quebras em telas menores */
+}
+
+.product-card {
+    flex: 1;
+    min-width: 280px; /* Garante tamanho mínimo para o cartão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px; /* Altura fixa para manter o alinhamento */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+/* Linha separadora horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/*
+ * 6. Rodapé (Footer)
+ */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.interactive-area {
+    margin-bottom: 20px;
+}
+
+.contact-phrase {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #666;
+}
+
+#thank-you-message {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.copyright {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #555;
+    font-size: 0.85em;
+}
+
+/*
+ * 7. Responsividade (Para telas menores/celulares)
+ */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .profile-icons {
+        justify-content: center;
+    }
+
+    .banner-content {
+        flex-direction: column; /* Empilha o texto e a imagem do banner */
+    }
+
+    .banner-text {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .banner-text h1 {
+        font-size: 1.8em;
+    }
+    
+    .card-container {
+        justify-content: center; /* Centraliza os cartões */
+    }
+    
+    .product-card {
+        min-width: 90%; /* Ocupa quase a largura toda da tela */
+    }
+
+    #email-input {
+        width: 70%;
+    }
+}

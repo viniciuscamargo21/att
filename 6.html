@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Formulários 5</title>
+</head>
+<body bgcolor="#B0C4DE">
+    <form method="GET" action="form4.html">
+		<h2 align="center">Cadastro de Clientes</h2>
+		<fieldset style="width: 50%">
+			<legend> Dados Pessoais</legend>
+			<label for="caixa1">Digite seu Nome:</label>			
+			<input type="text" id="caixa1" name="nome" size="70" maxlength="40" /><br />
+			<label for="caixa2">Digite seu Email:</label>			
+			<input type="text" id="caixa2" name="ender" size="70" maxlength="40" /><br />
+			<label for="caixa3">Digite sua senha:</label>			
+			<input type="password" id="caixa3" name="email" size="70" maxlength="40" /><br />	
+			
+		<br />
+        	</fieldset>
+
+            <fieldset>
+			<legend> Sexo</legend>
+			<input type="radio" name="sexo" value="masculino"> Masculino <br /> 
+			<input type="radio" name="sexo" value="feminino" checked> Feminino
+		</fieldset>
+		
+        <br />
+		<fieldset>
+			<legend> Você gostaria de?</legend>	
+			<input type="checkbox" name="receber1" value="1" checked /> 
+			Desejo receber emails sobre produtos e lançamentamentos.<br />
+			<input type="checkbox" name="receber2" value="1"/> 
+			Desejo receber notificação sobre a empresa.<br />
+		</fieldset>	
+
+        <br />Estado:<br /> 
+		<select name="estado"> 
+			<label for="estado">Estado:</label>
+
+                            <option value="">Selecione seu estado</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+
+
+		</select><br /><br /> 
+
+		<br/>
+		<h2>Confirma Cadastro?</h2>
+		<a href="index.html">Enviar Cadastro </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="Apagar tudo"> 
+	</form>
+</body>		
